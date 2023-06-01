@@ -1,0 +1,123 @@
+/* Estilos para el encabezado */
+body {
+    background-color: #111;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    color: white;
+}
+
+/* Estilos para el menú */
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+
+.abrir-menu,
+.cerrar-menu{
+    display: none;
+}
+
+@media screen and (max-width: 1000px){
+    .abrir-menu,
+    .cerrar-menu{
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+
+    }
+
+    .abrir-menu{
+        color: black;
+     
+    }
+
+    .cerrar-menu{
+        color: white;
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+       flex-direction: column;
+       align-items: end;
+       gap: 1rem;
+       position: absolute;
+       top: 0;
+       right: 0;
+       bottom: 0;
+       background-color: #1c1c1c;
+       padding: 2rem;
+       box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a{
+        color:white;
+    }
+}
+/* Estilos para el formulario */
+section {
+    margin: 20px;
+    color: white;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    width: 98%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: black;
+    padding: 25px;
+    text-align: center;
+    color: white;
+}
+
+/*Imagenes de fondo*/
+#fondobody {
+    background-image: url('../img/estrellas2.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#fondoheader {
+    background-image: url('../img/estrellas.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

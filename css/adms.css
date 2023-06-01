@@ -1,0 +1,121 @@
+/*
+Hoja de estilo responsivo y con transiciones
+Autor:
+*/
+
+	
+* {
+    box-sizing: border-box; 
+}
+
+
+a:link{color:DarkCyan;}
+a:visited{color:BlueViolet; font-weight: lighter;}
+a:hover{color:DarkMagenta; font-weight: bold;}
+a.menu{
+	display: block;
+}
+
+body{
+	background-image: url("../img/bg2.png");
+	background-size: 100%;
+	font-family: Verdana, Helvetica, Arial, "Times New Roman";
+	color: rgb(255, 255, 255);
+	margin-block-start: 0.1em;
+	margin-block-end: 0.1em;
+	margin-inline-start: 0.3em;
+	margin-inline-end: 0.2em;
+}
+img, video, canvas {
+  max-width: 100%;
+}
+figure.logo{
+	display: inline;
+	width:10px;
+	height:10px;
+}
+
+img.logo{
+	width:70px;
+	height:70px;
+}
+
+nav {
+
+	background-color:rgb(1, 15, 14);
+	padding: 5px 15px;
+}
+
+
+nav li {
+display: inline-block;
+list-style: none; /*list-style: square inside url("sqpurple.gif");*/
+padding: 5px;
+font: bold 14px verdana, sans-serif;
+}
+
+
+aside{
+float: right;
+width: 15%;
+height: 435px;
+margin: 20px 0px ;
+padding: 20px;
+background: rgb(187, 233, 227);
+}
+
+section {
+	height: 100px;
+	float: center;
+	margin-left: 45%;
+	margin-right: 50%;
+	width: 200px;
+	text-transform: none;
+	margin-top: 15%;
+	margin-bottom: 0%;
+}
+
+#shill{
+	color: #FFFFFF;
+}
+
+footer{
+	width: 100%;
+	height: auto;
+	font-size: 75%;
+	padding: 0.625em 0.9em 1.4em;
+	background-color:rgb(202, 190, 210);
+	text-align: center;
+	min-height: 2em;
+	float: left;
+}
+
+#titPral{
+	display: inline;
+	vertical-align:90%;
+}
+
+h4{
+	color:#DD0000
+}
+
+/* Para ajuste responsivo*/
+@media screen and (max-width: 600px){
+	header {
+		height: auto;
+	}
+	nav {
+		float: none;
+		width: auto;
+	}
+	section {
+		float: none;
+		width: auto;
+	}
+
+	aside {
+		float: none;
+		width: auto;
+	}
+
+}

@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    font-size: 48px;
+    text-align: center;
+    color: white;
+  }
+  
+  .button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #111;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .button:hover {
+    background-color: #111;
+    color: white;
+  }
+  
+  #fondobody {
+    background-image: url('../img/estrellas2.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+}
