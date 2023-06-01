@@ -3,12 +3,68 @@
 <head>
   <title>Respuestas de comentarios</title>
   <style>
+    body {
+
+    
+      background-image: url('img/fondo2.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #FFFFFF;
+      font-family: Arial, sans-serif;
+    }
+    
+    h1 {
+      color: #00D2BE;
+    }
+    
     table {
       border-collapse: collapse;
+      margin-top: 20px;
     }
+    
     th, td {
-      border: 1px solid black;
+      border: 1px solid #00D2BE;
+      padding: 10px;
+    }
+    
+    th {
+      background-color: #00D2BE;
+      color: #FFFFFF;
+    }
+    
+    td {
+      background-color: transparent;
+      color: #ffffff;
+    }
+    
+    a {
+      color: #00D2BE;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    input[type="text"] {
       padding: 5px;
+      border: 1px solid #00D2BE;
+      border-radius: 4px;
+      background-color: #FFFFFF;
+      color: #000000;
+    }
+    
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #00D2BE;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #009E8C;
     }
   </style>
 </head>
